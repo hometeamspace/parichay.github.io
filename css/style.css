@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+* , body
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato',sans-serif;
+    
+    
+}
+
+p
+{
+    font-size: 18px;
+    font-weight: 480;
+    line-height: 1.5em;
+
+    
+}
+
+a
+{
+    margin: inherit;
+}
+
+html
+{
+    scroll-behavior: smooth;
+    
+}
+
+/*********** header *********/
+.nav-pills .nav-link.active
+{
+    background: transparent;
+    color: #666666;
+}
+
+.nav-pills .nav-link.active:hover
+{
+    color: blue;
+}
+
+/********** header end **********/
+
+/*********** hero **********/
+
+ .jumbotron-fluid
+{
+    background: linear-gradient(to right, rgba(0 , 0 , 0 , 0.3) , rgba(0 , 0 , 0 , 0.5)),url(../img/hero-.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    
+    
+}
+
+.jumbotron-fluid a
+{
+    top: 50vh;
+    position: relative;
+    transform: translateY(50%);
+    
+}
+
+.hero-btn
+{
+    border-radius: 25px;
+
+    background-image: linear-gradient(to right,#b92b27 0%, #1565C0 100%);
+    border: none;
+}
+
+
+.hero-btn:hover
+{
+    background-image: linear-gradient(to left,#b92b27 0%, #1565C0 100%);
+    transition: all 0.3s ease;
+}
+
+
+.hero .btn:hover
+{
+    background-position: right center;
+}
+
+
+
+
+/********** hero end ******/
+
+/******* about ********/
+
+
+
+/********* about end ******/
+
+/****** packages*********/
+
+.packages
+{
+    background: #b92b27;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #1565C0, #b92b27);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #1565C0, #b92b27); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+a {
+    text-decoration: none;
+}
+
+.pricingTable {
+    text-align: center;
+    background: #fff;
+    margin: 0 -15px;
+    box-shadow: 0 0 10px #ababab;
+    padding-bottom: 40px;
+    border-radius: 10px;
+    color: #cad0de;
+    transform: scale(1);
+    transition: all .5s ease 0s
+}
+
+.pricingTable:hover {
+    transform: scale(1.05);
+    z-index: 1
+}
+
+.pricingTable .pricingTable-header {
+    padding: 40px 0;
+    background: #f5f6f9;
+    border-radius: 10px 10px 50% 50%;
+    transition: all .5s ease 0s
+}
+
+.pricingTable:hover .pricingTable-header {
+    background: #ff9624
+}
+
+.pricingTable .pricingTable-header i {
+    font-size: 50px;
+    color: #858c9a;
+    margin-bottom: 10px;
+    transition: all .5s ease 0s
+}
+
+.pricingTable .price-value {
+    font-size: 35px;
+    color: #ff9624;
+    transition: all .5s ease 0s
+}
+
+.pricingTable .month {
+    display: block;
+    font-size: 14px;
+    color: #cad0de
+}
+
+.pricingTable:hover .month,
+.pricingTable:hover .price-value,
+.pricingTable:hover .pricingTable-header i {
+    color: #fff
+}
+
+.pricingTable .heading {
+    font-size: 24px;
+    color: #ff9624;
+    margin-bottom: 20px;
+    text-transform: uppercase
+}
+
+.pricingTable .pricing-content ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px
+}
+
+.pricingTable .pricing-content ul li {
+    line-height: 30px;
+    color: #a7a8aa
+}
+
+.pricingTable .pricingTable-signup a {
+    display: inline-block;
+    font-size: 15px;
+    color: #fff;
+    padding: 10px 35px;
+    border-radius: 20px;
+    background: #ffa442;
+    text-transform: uppercase;
+    transition: all .3s ease 0s
+}
+
+.pricingTable .pricingTable-signup a:hover {
+    box-shadow: 0 0 10px #ffa442
+}
+
+.pricingTable.blue .heading,
+.pricingTable.blue .price-value {
+    color: #4b64ff
+}
+
+.pricingTable.blue .pricingTable-signup a,
+.pricingTable.blue:hover .pricingTable-header {
+    background: #4b64ff
+}
+
+.pricingTable.blue .pricingTable-signup a:hover {
+    box-shadow: 0 0 10px #4b64ff
+}
+
+.pricingTable.red .heading,
+.pricingTable.red .price-value {
+    color: #ff4b4b
+}
+
+.pricingTable.red .pricingTable-signup a,
+.pricingTable.red:hover .pricingTable-header {
+    background: #ff4b4b
+}
+
+.pricingTable.red .pricingTable-signup a:hover {
+    box-shadow: 0 0 10px #ff4b4b
+}
+
+.pricingTable.green .heading,
+.pricingTable.green .price-value {
+    color: #40c952
+}
+
+.pricingTable.green .pricingTable-signup a,
+.pricingTable.green:hover .pricingTable-header {
+    background: #40c952
+}
+
+.pricingTable.green .pricingTable-signup a:hover {
+    box-shadow: 0 0 10px #40c952
+}
+
+.pricingTable.blue:hover .price-value,
+.pricingTable.green:hover .price-value,
+.pricingTable.red:hover .price-value {
+    color: #fff
+}
+
+@media screen and (max-width:990px) {
+    .pricingTable {
+        margin: 0 0 20px
+    }
+}
+
+/********* packages end ******/
+
+/******** partners*********/
+
+.partners
+{
+    background: #b92b27;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #1565C0, #b92b27);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #1565C0, #b92b27); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+/********* partners end *****/
+
+/********** media partners *********/
+
+
+
+/********** media partners end ********/
+
+
+/*********************** responsive *******************/
+
+@media (max-width: 575.98px) {
+
+    .event-head-holder
+    {
+        transform: none;
+    }
+
+    .hero h1
+    {
+        margin-top: 120px;
+    }
+
+    .past-eve img
+    {
+        margin-top: 10px;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 991.98px) 
+{
+    .buy
+    {
+        font-size: 12px;
+    }
+}
+/******************* responsive end ******************/
